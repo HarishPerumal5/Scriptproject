@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Macbeth</h2>
+            <h5>William Shekspear</h5>
+            <p>“To-morrow, and to-morrow, and to-morrow,
+                Creeps in this petty pace from day to day,
+                To the last syllable of recorded time;
+                And all our yesterdays have lighted fools
+                The way to dusty death. Out, out, brief candle!
+                Life's but a walking shadow, a poor player,
+                That struts and frets his hour upon the stage,
+                And then is heard no more. It is a tale
+                Told by an idiot, full of sound and fury,
+                Signifying nothing.”</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+       <form>
+            <input type="text" placeholder="Title" class="popup-input" id="title-input">
+            <input type="text" placeholder="Author" class="popup-input" id="author-input">
+           <textarea placeholder="short description" class="popup-description-input"
+                id="description-input"></textarea>
+            <button type="button" class="popup-box-button" id="add-button-popup"> Add </button>
+            <button  type="button" class="popup-box-button" id="Cancel-button" onclick="can()">Cancel</button>
+
+    </form>
+    </div>
+    <button class="add-popup-button" id="add-popup-btn">+</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
